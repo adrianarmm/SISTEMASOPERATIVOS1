@@ -6,3 +6,19 @@ typedef struct {
     int arrSize;     // Número de elementos almacenados en el array
     int arrAdd;      // Suma de los elementos contenidos en el array
 } arrayLength_t;
+
+// Función para inicializar el array con -1 y poner arrSize y arrAdd a 0
+int initArray(arrayLength_t *arr) {
+    if (arr == NULL) {
+        return -1; // Retornamos -1 en caso de que el puntero sea NULL
+    }
+
+    arr->arrSize = 0;  // Inicializamos el tamaño en 0
+    arr->arrAdd = 0;   // Inicializamos la suma en 0
+
+    for (int i = 0; i < 10; i++) {
+        arr->arrInt[i] = -1;  // Inicializamos todas las posiciones del array a -1
+    }
+
+    return 0; // Si no hubo errores, retornamos 0
+}
