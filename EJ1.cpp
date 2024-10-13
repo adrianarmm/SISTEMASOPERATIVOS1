@@ -15,3 +15,14 @@ void initArray(arrayLength_t *arr) {
         arr->arrInt[i] = 0;  // Inicializamos todos los elementos del array en 0
     }
 }
+
+// Función para agregar un valor al array
+void addValue(arrayLength_t *arr, int value) {
+    if (arr->arrSize < 10) {  // Comprobamos si hay espacio en el array
+        arr->arrInt[arr->arrSize] = value;  // Añadimos el valor en la posición correcta
+        arr->arrAdd += value;   // Actualizamos la suma de los elementos
+        arr->arrSize++;         // Incrementamos el tamaño del array
+    } else {
+        printf("Array lleno, no se puede agregar más valores.\n");
+    }
+}
