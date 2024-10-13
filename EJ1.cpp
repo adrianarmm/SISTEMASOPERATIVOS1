@@ -1,4 +1,23 @@
-#include <stdio.h>
+
+#include "utils.h"
+
+int initArray(arrayLength_t *arr) {
+    if (arr == NULL) {
+        return -1;
+    }
+
+    arr->arrSize = 0;
+    arr->arrAdd = 0;
+    for (int i = 0; i < 10; i++) {
+        arr->arrInt[i] = -1;
+    }
+
+    return 0;
+}
+
+
+
+
 
 // Definición de la estructura con typedef para convertirla en un tipo de datos
 typedef struct {
