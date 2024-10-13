@@ -26,3 +26,12 @@ void addValue(arrayLength_t *arr, int value) {
         printf("Array lleno, no se puede agregar más valores.\n");
     }
 }
+
+// Función para imprimir los valores del array
+void printArray(arrayLength_t *arr) {
+    printf("Elementos en el array: ");
+    for (int i = 0; i < arr->arrSize; i++) {  // Recorremos el array hasta el número de elementos almacenados
+        printf("%d ", arr->arrInt[i]);
+    }
+    printf("\nNúmero de elementos: %d\n", arr->arrSize);  // Imprimimos el tamaño actual del array
+    printf("Suma de los elementos: %d\n", arr->arrAdd);   // Imprimimos la suma de los elementos
