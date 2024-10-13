@@ -35,3 +35,4 @@ void printArray(arrayLength_t *arr) {
     }
     printf("\nNúmero de elementos: %d\n", arr->arrSize);  // Imprimimos el tamaño actual del array
     printf("Suma de los elementos: %d\n", arr->arrAdd);   // Imprimimos la suma de los elementos
+}
