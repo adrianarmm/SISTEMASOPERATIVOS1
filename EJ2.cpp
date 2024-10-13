@@ -1,4 +1,6 @@
+#include "utils.h"
 #include <stdio.h>
+
 
 // Definición de la estructura con typedef para convertirla en un tipo de datos
 typedef struct {
