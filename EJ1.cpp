@@ -36,3 +36,21 @@ void printArray(arrayLength_t *arr) {
     printf("\nNúmero de elementos: %d\n", arr->arrSize);  // Imprimimos el tamaño actual del array
     printf("Suma de los elementos: %d\n", arr->arrAdd);   // Imprimimos la suma de los elementos
 }
+
+// Función principal del programa
+int main() {
+    arrayLength_t myArray;  // Declaramos una variable del tipo arrayLength_t
+
+    // Inicializamos el array
+    initArray(&myArray);
+
+    // Agregamos algunos valores
+    addValue(&myArray, 5);
+    addValue(&myArray, 8);
+    addValue(&myArray, 12);
+
+    // Imprimimos el contenido del array
+    printArray(&myArray);
+
+    return 0;
+}
