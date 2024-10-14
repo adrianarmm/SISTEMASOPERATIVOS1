@@ -53,4 +53,13 @@ int main() {
     }
 
     return 0;
+
+#ifdef EJ2
+    int main() {
+    // Código para el ejercicio 2
+    return 0;
+}
+#endif
+
+
 }

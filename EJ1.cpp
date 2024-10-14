@@ -54,4 +54,13 @@ int main() {
     printArray(&myArray);
 
     return 0;
+
+#ifdef EJ1
+    int main() {
+    // Código para el ejercicio 1
+    return 0;
+}
+#endif
+
+
 }

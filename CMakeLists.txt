@@ -7,3 +7,5 @@ add_executable(SISTEMASOPERATIVOS1
         EJ1.cpp
         EJ2.cpp
 )
+
+974105
